@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../Img/img.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Sofia", sans-serif;
+}
+.weather_app{
+    margin:20px;
+    width: 80%;
+    height: 90%;
+    border-radius: 22px;
+    display: flex;
+    padding: 5px;
+    position: relative;
+    
+}
+
+.weather_app .sidebar{
+    width:30%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 5px;
+    background-color: rgba(255, 255, 255,0.815);
+    border-radius: 22px 0 0 22px;
+    
+}
+.search{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    
+}
+#countries_search{
+    font-family: "Sofia", sans-serif;
+    background-color: white;
+    width: 100%;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 2px 0 2px 10px;
+    color: black;
+}
+.btn_search{
+    margin: 0 5px 0 0;
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3399ff;
+    cursor: pointer;
+    
+    
+}
+.btn_search .search_icon{
+    margin: 2px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.weather_icon{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+img{
+    width:100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 22px;
+}
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#temp{
+    font-size: 80px;
+    font-family: "Sofia", sans-serif;
+}
+.date_time{
+    
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+}
+.condition_rain{
+    width: 100%;
+}
+.condition,.rain{
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    padding: 5px;
+}
+#condition,#rain{
+    margin-left: 5px;
+}
+.location{
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+}
+.main_app{
+    height: 100%;
+    width: 70%;
+    background-color:#FFF5EE;
+    margin: 5px 10px 5px -5px;
+    border-radius: 0 22px 22px 0;
+}
+.main_app nav{
+    padding: 10px 20px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options button{
+    border: none;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.week{
+ margin-left: 10px;
+}
+.celsious{
+    margin-right: 10px;
+}
+.active{
+    color: #3399ff;
+}
+.cards{
+   
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:15px;
+    gap: 20px;
+    overflow-y: scroll;
+    height: 250px;
+   
+    
+}
+.card_icon img{
+    width: 40px;
+    height: 60px;
+    object-fit: contain;
+}
+.cards .card{
+    padding: 5px;
+    border-radius: 20px;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.card .day_temp{
+    display: flex;
+    margin: 2px;
+    font-family: "Sofia", sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.highlights{
+  
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:15px;
+   gap: 15px;
+    height: 150px;
+    overflow-y: scroll;
+    border: none;
+
+}
+.highlight .heading{
+    font-family: "Sofia", sans-serif;
+    margin: 30px 0 30px 37px;
+}
+.highlights .card2{
+    padding: 10px;
+    width: 215px;
+    height: fit-content;
+    border-radius: 20px;
+    display: flex;
+    border: none;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+}
+.highlights::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+.highlights::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 22px;
+
+}
+.cards::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+.cards::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 22px;
+
+}
+.card2 .card_heading{
+    color: gray;
+    font-weight: 600;
+    font-family: "Sofia", sans-serif;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+
+.day_name{
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.value_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+}
+.value_content p {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+.content p {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-family: "Sofia", sans-serif;
+}
+.current_location,#rain,#condition,.day_time,.hourly,.week,.celsious,.fahrenheit,#date_time{
+    font-family: "Sofia", sans-serif;
+}
